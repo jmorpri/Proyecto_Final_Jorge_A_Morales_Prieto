@@ -2,7 +2,7 @@ import requests
 import random
 
 def obtener_preguntas():
-    url = "https://opentdb.com/api.php?amount=15&type=multiple"
+    url = "https://opentdb.com/api.php?amount=15&category=11&difficulty=easy&type=multiple"
     respuesta = requests.get(url)
     datos = respuesta.json()
     return datos['results']
